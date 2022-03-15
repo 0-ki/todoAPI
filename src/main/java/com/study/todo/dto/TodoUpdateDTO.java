@@ -5,13 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class ResponseDTO<T> {
-    private String result;
-    private List<T> data;
+public class TodoUpdateDTO{
+    private String id;
+    private String title;
+    private boolean done;
+    private String updateTitle;
 }
